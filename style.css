@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #2e7231;
+}
+
+
+header {
+    background-color: #000000;
+    color: #2e7231;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+nav {
+    background-color: #2e7231;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 5px 0 10px 0;
+}
+
+nav a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(245, 215, 66, 0.5);
+}
+
+main h2 {
+    text-align: center;
+    color: #2e7231;
+    margin: 30px 0;
+}
+
+.intro {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.intro img {
+    width: 450px;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid #2e7231;
+}
+
+.card {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #2e7231;
+    max-width: 800px;
+    color: #2e7231;
+}
+
+.card img {
+    max-width: 200%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card p {
+    color: #2e7231;
+    font-size: 14px;
+}
+
+.card-ransomware {
+    background-color: #2e7231;
+    color: #121212;
+}
+
+.container-integrantes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.integrante {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #2e7231;
+    text-align: center;
+    width: 220px;
+}
+
+.integrante h3 {
+    color: #2e7231;
+    margin-bottom: 10px;
+}
+
+.integrante img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #2e7231;
+}
+
+.quiz {
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 8px;
+    color: #2e7231;
+}
+
+.quiz h2 {
+    margin-bottom: 8px;
+}
+
+.pergunta,
+.question {
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+button {
+    background-color: #2e7231;
+    color: #121212;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2e7231;
+}
+
+.resultado {
+    background-color: #28a745;
+    color: white;
+}
+
+.resultado:hover {
+    background-color: #1e7e34;
+}
+
+.button-group {
+    margin-bottom: 15px;
+}
+
+.button-group button {
+    background-color: #2e7231;
+    border: none;
+    padding: 8px 15px;
+    color: #121212;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #2e7231;
+}
+
+.glossario {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    color: #2e7231;
+}
+
+.glossario p {
+    margin-bottom: 10px;
+}
+
+.glossario button {
+    background-color: #2e7231;
+    border: none;
+    padding: 8px 15px;
+    color: #121212;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.glossario button:hover {
+    background-color: #2e7231;
+}
+
+#definicao {
+    background-color: #121212;
+    border: 1px dashed #2e7231;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    color: #2e7231;
+}
+
+footer {
+    background-color: #121212;
+    color: #2e7231;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #2e7231;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro img {
+        width: 100px;
+    }
+}
+
+#integrantes {
+    display: none;
+    margin-top: 20px;
+}
+
+.container-integrantes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.integrante {
+    text-align: center;
+}
+
+.integrante img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}

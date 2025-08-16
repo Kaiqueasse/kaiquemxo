@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Phishing</h1>
+        <nav>
+            <a href="index.html">Inicial</a>
+            <a href="phishing.html">Phishing</a>
+            <a href="engrenhariasocial.html">Malware</a>
+            <a href="desenvolvedores.html">Integrantes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+          <img src="img de Phishing.jpeg" alt="Ícone de phishing" />
+            <h2>O que é Phishing?</h2>
+            <p><br><br>Phishing é uma técnica de fraude digital para enganar usuários e obter informações pessoais.</p>
+        </section>
+
+        <section>
+            <h2>Quiz: Você reconhece um phishing?</h2>
+            <label for="pergunta1">Você recebeu um e-mail de banco pedindo sua senha?</label>
+            <select id="pergunta1">
+                <option value="">Selecione</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+
+            <label for="pergunta2">O e-mail possui links suspeitos?</label>
+            <select id="pergunta2">
+                <option value="">Selecione</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+
+            <button onclick="calcularRisco()">Verificar Risco</button>
+            <p id="resultadoQuiz"></p>
+            <button onclick="resetarQuiz()">Resetar Quiz</button>
+        </section>
+
+        <section>
+            <p id="contador"></p>
+            <button onclick="contarClique()">Clique aqui</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Segurança Computacional - Trabalho Final</p>
+    </footer>
+</body>
+</html>
