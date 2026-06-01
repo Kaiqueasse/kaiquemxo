@@ -1,4 +1,4 @@
-# Olá, eu sou Kaique Máximo 👋
+# Olá, eu sou Kaique Fillipe 
 
 🎓 Técnico em Informática (Conclusão 2025)
 💻 Jovem Aprendiz de TI na Centrasa
